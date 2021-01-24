@@ -1,0 +1,27 @@
+xampp install
+cmd 
+create a virtualenv and install there 
+pip install virtualenvwrapper-win
+mkvirtualenv py1
+if we want to swith and you have multiple env
+workon py1
+pip install django
+django-admin startproject djangoproject
+cd djangoproject
+code .
+python manage.py runserver
+pip install mysqlclient
+enter database information in setting.py
+create that db in sql xampp : localhost/phpmyadmin
+python manage.py migrate
+python manage.py createsuperuser --username= --email=
+
+python manaage.py startapp posts
+
+in setting.py add the app name in ''
+
+urls.py url('posts/',include('posts.urls')
+
+
+
+python manage.py makemigrations posts
